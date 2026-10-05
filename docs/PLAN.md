@@ -4,7 +4,7 @@ Source of truth for progress. Agents: complete one unchecked task per PR, lowest
 
 ## Phase 0: Setup
 - [x] Repo scaffold, AGENTS.md, CI
-- [ ] Add MIT LICENSE
+- [x] Add MIT LICENSE
 - [ ] `scripts/download_unihan.py` downloads and unzips Unihan into `data/raw/`
 
 ## Phase 1: Ingest and database
