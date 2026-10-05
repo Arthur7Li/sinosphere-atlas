@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sinosphere"
+version = "0.1.0"
+description = "CJKV character and reading analysis"
+requires-python = ">=3.11"
+dependencies = ["pandas", "numpy", "scikit-learn", "networkx", "matplotlib", "requests"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
